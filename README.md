@@ -1,3 +1,3 @@
 # DeepPhysiNet
 
-Will be availabel after publication.
+Will be available after publication.
