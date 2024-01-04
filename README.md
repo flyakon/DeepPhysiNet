@@ -1,3 +1,3 @@
 # DeepPhysiNet
 
-Will be available after publication.
+Will be available as soon as possible.
