@@ -4,17 +4,6 @@
     </h2>
 </div>
 
-<div align="center">
-  <a href="">
-    <span style="font-size: 20px; ">Project Page</span>
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://arxiv.org/abs/2401.04125">
-    <span style="font-size: 20px; ">arXiv</span>
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-
-</div>
 
 
 [![license](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
