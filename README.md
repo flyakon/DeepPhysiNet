@@ -312,7 +312,7 @@ _TODO_
 
 ## Citation
 
-If you use the code or performance benchmarks of this project in your research, please refer to the bibtex below to cite RSPrompter.
+If you use the code or performance benchmarks of this project in your research, please refer to the bibtex below to cite.
 
 ```
 @misc{li2024deepphysinet,
