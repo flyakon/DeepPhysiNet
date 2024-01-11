@@ -331,4 +331,4 @@ This project is licensed under the [Apache 2.0 license](LICENSE).
 
 ## Contact
 
-If you have any other questions❓, please contact us in time 👬
+If you have any other questions or suggestions, please contact Wenyuan Li ([liwayne@hku.hk](mailto:liwayne@hku.hk) or [liwenyuan@buaa.edu.cn](mailto:liwenyuan@buaa.edu.cn)).
