@@ -281,7 +281,31 @@ Other data can be found in [auxiliary data](./auxiliary_data).
 
 ### Labels from ERA5
 
-_TOTO_
+**Step 1**: Download
+
+ERA5 data can be downloaded from [ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=form).
+
+Please select the format of NetCDF and same study area same in the paper with boundary with $72^{\circ} E$ to $136^{\circ} E$ and $18^{\circ} N$ to $54^{\circ} N$.
+
+Also note that the target resolution should be $0.25^{\circ}$ and 1 hour.
+
+**step 2**: Variables Extraction
+
+Use the following commands to extract variables from ERA5 as training labels.
+
+```shell
+python tool/extract_variable_from_ERA5.py --data_path $ERA_ROOT --result_path $LABEL_ROOT --num_threads 2
+```
+
+**step 3**: Calculate extra variable
+
+
+The input variable of air intensity should be calculated:
+
+```shell
+python tools/calc_rho.py --data_path $LABEL_ROOT  --num_threads 0
+```
+
 
 </details>
 

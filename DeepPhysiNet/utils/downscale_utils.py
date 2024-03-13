@@ -10,8 +10,6 @@ import numpy as np
 from netCDF4 import Dataset,Variable
 import matplotlib.pyplot as plt
 from matplotlib.cm import get_cmap
-from mpl_toolkits.basemap import Basemap
-
 
 from wrf import to_np, getvar, smooth2d, get_basemap, latlon_coords,projection
 import xarray
