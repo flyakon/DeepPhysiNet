@@ -22,7 +22,7 @@ The current branch has been tested under PyTorch 2.x and CUDA 12.1, supports Pyt
 ## TODO
 
 
-- [ ] Download and make label dataset
+- [x] Download and make label dataset
 
 - [ ] Parameters details in config file
 
