@@ -3,7 +3,7 @@
 @File    : filter_valid_date.py
 @Author  : Wenyuan Li
 @Date    : 2023/3/10 22:30 
-@Desc    :  根据已经处理好的GFS数据，确定还有哪些数据下载是有问题的，然后手动试一试
+@Desc    : 
 '''
 import pickle
 import shutil
