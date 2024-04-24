@@ -96,7 +96,7 @@ config=dict(
         train_data=dict(
             input_path=r'/mnt/home/xx/training_data',
             label_path=r'/mnt/home/xx/training_labels',
-            input_data_map_file=r'D/mnt/home/xx/train_data_map.pickle',
+            input_data_map_cfg=dict(NCEP=r'D/mnt/home/xx/train_data_map.pickle'),
             constant_path=r'/mnt/home/xx/constant_variables',
             constant_variables=('landsea', 'elevation','lat','lon'),
             start_time=r'2008-01-01_00_00_00',
@@ -116,7 +116,7 @@ config=dict(
         valid_data=dict(
             input_path=r'/mnt/home/xx/training_data',
             label_path=r'/mnt/home/xx/training_labels',
-            input_data_map_file=r'/mnt/home/xx/train_data_map.pickle',
+            input_data_map_cfg=dict(NCEP=r'/mnt/home/xx/train_data_map.pickle'),
             constant_path=r'/mnt/home/xx/constant_variables',
             constant_variables=('landsea', 'elevation','lat','lon'),
             start_time=r'2020-07-01_00_00_00',
@@ -136,7 +136,6 @@ config=dict(
         losses=dict(
             pde_loss=dict(name='MSELoss'),
             prediction_loss=dict(name='WeightSmoothL1Loss',beta=0.1),
-            # prediction_loss=dict(name='MSELoss'),
             loss_factor=dict(
                 sample_factor=1.e6,
                 margin_factor=1.e6,
