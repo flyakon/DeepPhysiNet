@@ -271,7 +271,7 @@ Also, we need to check the input data and generate a temp file for training for 
 
 ```shell
 
-python tools/generate_input_map.py --data_path $Variable_ROOT --result_file $Variable_ROOT/input_map.pickel --start_time  2007-01-01-00:00:00 --end_time 2020-12-31-12:00:00 
+python tools/generate_input_map.py --data_path $Variable_ROOT --result_file $Variable_ROOT/input_map.pickle --start_time  2007-01-01-00:00:00 --end_time 2020-12-31-12:00:00 
 
 ```
 
