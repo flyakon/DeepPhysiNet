@@ -90,7 +90,7 @@ if __name__=='__main__':
     end_time = datetime.datetime.strptime(end_time, '%Y-%m-%d-%H:%M:%S')
     if not os.path.exists(result_path):
         os.makedirs(result_path)
-    data_files = glob.glob(os.path.join(data_path, '202*.nc'))
+    data_files = glob.glob(os.path.join(data_path, '*.nc'))
     np.random.shuffle(data_files)
     num_thread=args.num_threads
     if num_thread <= 0:
