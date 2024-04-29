@@ -77,6 +77,8 @@ if __name__=='__main__':
     parse.add_argument('--data_path', type=str, required=True)
     parse.add_argument('--result_path', type=str, required=True)
     parse.add_argument('--num_threads', type=int, default=0)
+    parse.add_argument('--start_time', type=str, default='2007-01-01-00:00:00')
+    parse.add_argument('--end_time', type=str, default='2023-12-31-12:00:00')
     args = parse.parse_args()
     print(args)
     data_path = args.data_path
@@ -84,8 +86,8 @@ if __name__=='__main__':
     data_shape = (145, 257)
     var_name_list = ['t2m', 'sp', 'u10', 'v10', 'd2m']
     proj_name_list = ['t2', 'PSFC', 'u10', 'v10', 'q2']
-    start_time = '2021-01-01-00:00:00'
-    end_time = r'2022-12-31-23:00:00'
+    start_time = args.start_time
+    end_time = args.end_time
     start_time = datetime.datetime.strptime(start_time, '%Y-%m-%d-%H:%M:%S')
     end_time = datetime.datetime.strptime(end_time, '%Y-%m-%d-%H:%M:%S')
     if not os.path.exists(result_path):

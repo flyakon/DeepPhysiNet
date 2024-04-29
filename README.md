@@ -294,7 +294,7 @@ Also note that the target resolution should be $0.25^{\circ}$ and 1 hour.
 Use the following commands to extract variables from ERA5 as training labels.
 
 ```shell
-python tool/extract_variable_from_ERA5.py --data_path $ERA_ROOT --result_path $LABEL_ROOT --num_threads 2
+python tool/extract_variable_from_ERA5.py --data_path $ERA_ROOT --result_path $LABEL_ROOT --start_time  2020-01-01-00:00:00 --end_time 2020-12-31-12:00:00  --num_threads 2
 ```
 
 **step 3**: Calculate extra variable
