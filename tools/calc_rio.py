@@ -46,6 +46,7 @@ if __name__=='__main__':
     args = parse.parse_args()
     data_path = args.data_path
     data_files = glob.glob(os.path.join(data_path, '*/*_PSFC.tiff'))
+    data_files=data_files+ glob.glob(os.path.join(data_path, '*_PSFC.tiff'))
     num_thread = args.num_threads
 
     if num_thread <= 0:
